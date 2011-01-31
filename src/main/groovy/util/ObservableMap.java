@@ -17,9 +17,9 @@ package groovy.util;
 
 import groovy.lang.Closure;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import org.discobot.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeSupport;
 import java.util.*;
 
 /**

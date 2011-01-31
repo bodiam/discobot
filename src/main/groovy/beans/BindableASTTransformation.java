@@ -34,8 +34,8 @@ import org.codehaus.groovy.transform.ASTTransformation;
 import org.codehaus.groovy.transform.GroovyASTTransformation;
 import org.objectweb.asm.Opcodes;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import org.discobot.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeSupport;
 
 /**
  * Handles generation of code for the {@code @Bindable} annotation when {@code @Vetoable}
@@ -316,14 +316,14 @@ public class BindableASTTransformation implements ASTTransformation, Opcodes {
      * Adds the necessary field and methods to support property change support.
      * <p/>
      * Adds a new field:
-     * <code>protected final java.beans.PropertyChangeSupport this$PropertyChangeSupport = new java.beans.PropertyChangeSupport(this)</code>"
+     * <code>protected final org.discobot.beans.PropertyChangeSupport this$PropertyChangeSupport = new org.discobot.beans.PropertyChangeSupport(this)</code>"
      * <p/>
      * Also adds support methods:
-     * <code>public void addPropertyChangeListener(java.beans.PropertyChangeListener)</code>
-     * <code>public void addPropertyChangeListener(String, java.beans.PropertyChangeListener)</code>
-     * <code>public void removePropertyChangeListener(java.beans.PropertyChangeListener)</code>
-     * <code>public void removePropertyChangeListener(String, java.beans.PropertyChangeListener)</code>
-     * <code>public java.beans.PropertyChangeListener[] getPropertyChangeListeners()</code>
+     * <code>public void addPropertyChangeListener(org.discobot.beans.PropertyChangeListener)</code>
+     * <code>public void addPropertyChangeListener(String, org.discobot.beans.PropertyChangeListener)</code>
+     * <code>public void removePropertyChangeListener(org.discobot.beans.PropertyChangeListener)</code>
+     * <code>public void removePropertyChangeListener(String, org.discobot.beans.PropertyChangeListener)</code>
+     * <code>public org.discobot.beans.PropertyChangeListener[] getPropertyChangeListeners()</code>
      *
      * @param declaringClass the class to which we add the support field and methods
      */
@@ -333,7 +333,7 @@ public class BindableASTTransformation implements ASTTransformation, Opcodes {
         //String pcsFieldName = "this$propertyChangeSupport";
 
         // add field:
-        // protected final PropertyChangeSupport this$propertyChangeSupport = new java.beans.PropertyChangeSupport(this)
+        // protected final PropertyChangeSupport this$propertyChangeSupport = new org.discobot.beans.PropertyChangeSupport(this)
         FieldNode pcsField = declaringClass.addField(
                 "this$propertyChangeSupport",
                 ACC_FINAL | ACC_PRIVATE | ACC_SYNTHETIC,

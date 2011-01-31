@@ -21,8 +21,8 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
 import java.util.HashMap;
 import java.util.Map;
 

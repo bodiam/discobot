@@ -17,7 +17,7 @@ package org.codehaus.groovy.binding;
 
 import org.codehaus.groovy.runtime.InvokerHelper;
 
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeListener;
 import java.util.Set;
 import java.util.Map;
 import java.util.TreeMap;

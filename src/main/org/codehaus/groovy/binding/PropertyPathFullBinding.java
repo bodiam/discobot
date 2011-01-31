@@ -15,8 +15,8 @@
  */
 package org.codehaus.groovy.binding;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
 import java.util.Set;
 import java.util.HashSet;
 

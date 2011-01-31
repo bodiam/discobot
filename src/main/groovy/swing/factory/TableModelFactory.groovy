@@ -19,8 +19,8 @@ package groovy.swing.factory
 import groovy.model.DefaultTableModel
 import groovy.model.ValueHolder
 import groovy.model.ValueModel
-import java.beans.PropertyChangeListener
-import java.beans.PropertyChangeEvent
+import org.discobot.beans.PropertyChangeListener
+import org.discobot.beans.PropertyChangeEvent
 import javax.swing.JTable
 import javax.swing.table.TableModel
 

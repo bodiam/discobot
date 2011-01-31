@@ -26,7 +26,7 @@ import org.codehaus.groovy.runtime.callsite.PogoMetaClassSite;
 import org.codehaus.groovy.runtime.wrappers.Wrapper;
 import org.codehaus.groovy.util.FastArray;
 
-import java.beans.PropertyDescriptor;
+import org.discobot.beans.PropertyDescriptor;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.*;

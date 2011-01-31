@@ -15,8 +15,8 @@
  */
 package groovy.util
 
-import java.beans.Introspector
-import java.beans.BeanInfo
+import org.discobot.beans.Introspector
+import org.discobot.beans.BeanInfo
 import org.codehaus.groovy.runtime.InvokerHelper
 
 /**

@@ -17,8 +17,8 @@ package org.codehaus.groovy.binding;
 
 import org.codehaus.groovy.runtime.InvokerHelper;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
 
 public class PropertyChangeProxyTargetBinding implements TargetBinding {
     Object proxyObject;

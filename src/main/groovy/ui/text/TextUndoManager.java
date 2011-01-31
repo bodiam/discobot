@@ -16,7 +16,7 @@
 
 package groovy.ui.text;
 
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeListener;
 
 import javax.swing.event.SwingPropertyChangeSupport;
 import javax.swing.event.UndoableEditEvent;

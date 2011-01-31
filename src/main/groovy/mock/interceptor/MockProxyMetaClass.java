@@ -17,7 +17,7 @@ package groovy.mock.interceptor;
 
 import groovy.lang.*;
 
-import java.beans.IntrospectionException;
+import org.discobot.beans.IntrospectionException;
 
 /**
  * The ProxyMetaClass for the MockInterceptor.

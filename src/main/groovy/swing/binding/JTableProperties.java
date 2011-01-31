@@ -24,8 +24,8 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
 import java.util.HashMap;
 import java.util.Map;
 

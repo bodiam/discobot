@@ -30,7 +30,7 @@ import java.util.EventObject;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.TooManyListenersException;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeListener;
 
 class StandardBeanInfo extends SimpleBeanInfo {
 

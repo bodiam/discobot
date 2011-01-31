@@ -20,7 +20,7 @@ package org.discobot.beans;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeListener;
 
 public interface PropertyEditor {
 

@@ -55,46 +55,46 @@ import java.lang.annotation.Target;
  *
  *     private java.lang.String firstName
  *     private java.lang.Object zipCode
- *     final private java.beans.VetoableChangeSupport this$vetoableChangeSupport
+ *     final private org.discobot.beans.VetoableChangeSupport this$vetoableChangeSupport
  *
  *     public Person() {
- *         this$vetoableChangeSupport = new java.beans.VetoableChangeSupport(this)
+ *         this$vetoableChangeSupport = new org.discobot.beans.VetoableChangeSupport(this)
  *     }
  *
- *     public void addVetoableChangeListener(java.beans.VetoableChangeListener listener) {
+ *     public void addVetoableChangeListener(org.discobot.beans.VetoableChangeListener listener) {
  *         this$vetoableChangeSupport.addVetoableChangeListener(listener)
  *     }
  *
- *     public void addVetoableChangeListener(java.lang.String name, java.beans.VetoableChangeListener listener) {
+ *     public void addVetoableChangeListener(java.lang.String name, org.discobot.beans.VetoableChangeListener listener) {
  *         this$vetoableChangeSupport.addVetoableChangeListener(name, listener)
  *     }
  *
- *     public void removeVetoableChangeListener(java.beans.VetoableChangeListener listener) {
+ *     public void removeVetoableChangeListener(org.discobot.beans.VetoableChangeListener listener) {
  *         this$vetoableChangeSupport.removeVetoableChangeListener(listener)
  *     }
  *
- *     public void removeVetoableChangeListener(java.lang.String name, java.beans.VetoableChangeListener listener) {
+ *     public void removeVetoableChangeListener(java.lang.String name, org.discobot.beans.VetoableChangeListener listener) {
  *         this$vetoableChangeSupport.removeVetoableChangeListener(name, listener)
  *     }
  *
- *     public void fireVetoableChange(java.lang.String name, java.lang.Object oldValue, java.lang.Object newValue) throws java.beans.PropertyVetoException {
+ *     public void fireVetoableChange(java.lang.String name, java.lang.Object oldValue, java.lang.Object newValue) throws org.discobot.beans.PropertyVetoException {
  *         this$vetoableChangeSupport.fireVetoableChange(name, oldValue, newValue)
  *     }
  *
- *     public java.beans.VetoableChangeListener[] getVetoableChangeListeners() {
+ *     public org.discobot.beans.VetoableChangeListener[] getVetoableChangeListeners() {
  *         return this$vetoableChangeSupport.getVetoableChangeListeners()
  *     }
  *
- *     public java.beans.VetoableChangeListener[] getVetoableChangeListeners(java.lang.String name) {
+ *     public org.discobot.beans.VetoableChangeListener[] getVetoableChangeListeners(java.lang.String name) {
  *         return this$vetoableChangeSupport.getVetoableChangeListeners(name)
  *     }
  *
- *     public void setFirstName(java.lang.String value) throws java.beans.PropertyVetoException {
+ *     public void setFirstName(java.lang.String value) throws org.discobot.beans.PropertyVetoException {
  *         this.fireVetoableChange('firstName', firstName, value)
  *         firstName = value
  *     }
  *
- *     public void setZipCode(java.lang.Object value) throws java.beans.PropertyVetoException {
+ *     public void setZipCode(java.lang.Object value) throws org.discobot.beans.PropertyVetoException {
  *         this.fireVetoableChange('zipCode', zipCode, value)
  *         zipCode = value
  *     }

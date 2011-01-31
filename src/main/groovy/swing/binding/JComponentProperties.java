@@ -20,8 +20,8 @@ import org.codehaus.groovy.binding.*;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import javax.swing.JComponent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
 import java.util.HashMap;
 import java.util.Map;
 

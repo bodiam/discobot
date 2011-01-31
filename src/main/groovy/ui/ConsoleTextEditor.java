@@ -40,8 +40,8 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.print.PrinterJob;
 import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeEvent;
+import org.discobot.beans.PropertyChangeListener;
 import java.util.prefs.Preferences;
 
 import org.codehaus.groovy.runtime.DefaultGroovyMethods;

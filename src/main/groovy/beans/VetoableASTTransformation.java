@@ -33,9 +33,9 @@ import org.codehaus.groovy.syntax.Types;
 import org.codehaus.groovy.transform.GroovyASTTransformation;
 import org.objectweb.asm.Opcodes;
 
-import java.beans.PropertyVetoException;
-import java.beans.VetoableChangeListener;
-import java.beans.VetoableChangeSupport;
+import org.discobot.beans.PropertyVetoException;
+import org.discobot.beans.VetoableChangeListener;
+import org.discobot.beans.VetoableChangeSupport;
 
 /**
  * Handles generation of code for the {@code @Vetoable} annotation, and {@code @Bindable}
@@ -319,7 +319,7 @@ public class VetoableASTTransformation extends BindableASTTransformation {
      * Creates a setter method with the given body.
      * <p/>
      * This differs from normal setters in that we need to add a declared
-     * exception java.beans.PropertyVetoException
+     * exception org.discobot.beans.PropertyVetoException
      *
      * @param declaringClass the class to which we will add the setter
      * @param propertyNode          the field to back the setter
@@ -340,14 +340,14 @@ public class VetoableASTTransformation extends BindableASTTransformation {
      * Adds the necessary field and methods to support vetoable change support.
      * <p/>
      * Adds a new field:
-     * <code>"protected final java.beans.VetoableChangeSupport this$vetoableChangeSupport = new java.beans.VetoableChangeSupport(this)"</code>
+     * <code>"protected final org.discobot.beans.VetoableChangeSupport this$vetoableChangeSupport = new org.discobot.beans.VetoableChangeSupport(this)"</code>
      * <p/>
      * Also adds support methods:
-     * <code>public void addVetoableChangeListener(java.beans.VetoableChangeListener)</code>
-     * <code>public void addVetoableChangeListener(String, java.beans.VetoableChangeListener)</code>
-     * <code>public void removeVetoableChangeListener(java.beans.VetoableChangeListener)</code>
-     * <code>public void removeVetoableChangeListener(String, java.beans.VetoableChangeListener)</code>
-     * <code>public java.beans.VetoableChangeListener[] getVetoableChangeListeners()</code>
+     * <code>public void addVetoableChangeListener(org.discobot.beans.VetoableChangeListener)</code>
+     * <code>public void addVetoableChangeListener(String, org.discobot.beans.VetoableChangeListener)</code>
+     * <code>public void removeVetoableChangeListener(org.discobot.beans.VetoableChangeListener)</code>
+     * <code>public void removeVetoableChangeListener(String, org.discobot.beans.VetoableChangeListener)</code>
+     * <code>public org.discobot.beans.VetoableChangeListener[] getVetoableChangeListeners()</code>
      *
      * @param declaringClass the class to which we add the support field and methods
      */
@@ -356,7 +356,7 @@ public class VetoableASTTransformation extends BindableASTTransformation {
         ClassNode vclClassNode = ClassHelper.make(VetoableChangeListener.class);
 
         // add field:
-        // protected static VetoableChangeSupport this$vetoableChangeSupport = new java.beans.VetoableChangeSupport(this)
+        // protected static VetoableChangeSupport this$vetoableChangeSupport = new org.discobot.beans.VetoableChangeSupport(this)
         FieldNode vcsField = declaringClass.addField(
                 "this$vetoableChangeSupport",
                 ACC_FINAL | ACC_PRIVATE | ACC_SYNTHETIC,

@@ -15,8 +15,8 @@
  */
 package groovy.model;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import org.discobot.beans.PropertyChangeListener;
+import org.discobot.beans.PropertyChangeSupport;
 
 /**
  * A simple ValueModel implementation which is a holder of an object value. 

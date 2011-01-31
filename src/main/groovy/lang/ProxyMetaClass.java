@@ -15,7 +15,7 @@
  */
 package groovy.lang;
 
-import java.beans.IntrospectionException;
+import org.discobot.beans.IntrospectionException;
 
 /**
  * As subclass of MetaClass, ProxyMetaClass manages calls from Groovy Objects to POJOs.

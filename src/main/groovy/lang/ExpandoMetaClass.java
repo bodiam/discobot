@@ -1214,7 +1214,7 @@ public class ExpandoMetaClass extends MetaClassImpl implements GroovyObject {
         if (Character.isDigit(prop.charAt(0))) {
             return prop;
         }
-        return java.beans.Introspector.decapitalize(prop);
+        return org.discobot.beans.Introspector.decapitalize(prop);
     }
 
     /**

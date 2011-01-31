@@ -60,25 +60,25 @@ import java.lang.annotation.Target;
  *     private java.lang.String firstName
  *     &#064;groovy.beans.Bindable
  *     private java.lang.Object zipCode
- *     final private java.beans.PropertyChangeSupport this$propertyChangeSupport
+ *     final private org.discobot.beans.PropertyChangeSupport this$propertyChangeSupport
  *
  *     public Person() {
- *         this$propertyChangeSupport = new java.beans.PropertyChangeSupport(this)
+ *         this$propertyChangeSupport = new org.discobot.beans.PropertyChangeSupport(this)
  *     }
  *
- *     public void addPropertyChangeListener(java.beans.PropertyChangeListener listener) {
+ *     public void addPropertyChangeListener(org.discobot.beans.PropertyChangeListener listener) {
  *         this$propertyChangeSupport.addPropertyChangeListener(listener)
  *     }
  *
- *     public void addPropertyChangeListener(java.lang.String name, java.beans.PropertyChangeListener listener) {
+ *     public void addPropertyChangeListener(java.lang.String name, org.discobot.beans.PropertyChangeListener listener) {
  *         this$propertyChangeSupport.addPropertyChangeListener(name, listener)
  *     }
  *
- *     public void removePropertyChangeListener(java.beans.PropertyChangeListener listener) {
+ *     public void removePropertyChangeListener(org.discobot.beans.PropertyChangeListener listener) {
  *         this$propertyChangeSupport.removePropertyChangeListener(listener)
  *     }
  *
- *     public void removePropertyChangeListener(java.lang.String name, java.beans.PropertyChangeListener listener) {
+ *     public void removePropertyChangeListener(java.lang.String name, org.discobot.beans.PropertyChangeListener listener) {
  *         this$propertyChangeSupport.removePropertyChangeListener(name, listener)
  *     }
  *
@@ -86,11 +86,11 @@ import java.lang.annotation.Target;
  *         this$propertyChangeSupport.firePropertyChange(name, oldValue, newValue)
  *     }
  *
- *     public java.beans.PropertyChangeListener[] getPropertyChangeListeners() {
+ *     public org.discobot.beans.PropertyChangeListener[] getPropertyChangeListeners() {
  *         return this$propertyChangeSupport.getPropertyChangeListeners()
  *     }
  *
- *     public java.beans.PropertyChangeListener[] getPropertyChangeListeners(java.lang.String name) {
+ *     public org.discobot.beans.PropertyChangeListener[] getPropertyChangeListeners(java.lang.String name) {
  *         return this$propertyChangeSupport.getPropertyChangeListeners(name)
  *     }
  *

@@ -441,7 +441,7 @@ public class MetaClassHelper {
     }
 
     /**
-     * This is the complement to the java.beans.Introspector.decapitalize(String) method.
+     * This is the complement to the org.discobot.beans.Introspector.decapitalize(String) method.
      * We handle names that begin with an initial lowerCase followed by upperCase specially
      * (which is to make no change).
      * See GROOVY-3211.

@@ -25,7 +25,7 @@ import org.codehaus.groovy.transform.powerassert.PowerAssertionError;
 import org.codehaus.groovy.util.ReleaseInfo;
 import org.w3c.dom.Element;
 
-import java.beans.Introspector;
+import org.discobot.beans.Introspector;
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;

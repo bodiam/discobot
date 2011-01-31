@@ -65,11 +65,11 @@ import org.codehaus.groovy.util.FastArray;
 import org.codehaus.groovy.util.SingleKeyHashMap;
 import org.objectweb.asm.ClassVisitor;
 
-import java.beans.BeanInfo;
-import java.beans.EventSetDescriptor;
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
+import org.discobot.beans.BeanInfo;
+import org.discobot.beans.EventSetDescriptor;
+import org.discobot.beans.IntrospectionException;
+import org.discobot.beans.Introspector;
+import org.discobot.beans.PropertyDescriptor;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -2155,7 +2155,7 @@ public class MetaClassImpl implements MetaClass, MutableMetaClass {
         synchronized (propNames) {
             // assume "is" or "[gs]et"
             String stripped = methodName.startsWith("is") ? methodName.substring(2) : methodName.substring(3);
-            String propName = java.beans.Introspector.decapitalize(stripped);
+            String propName = org.discobot.beans.Introspector.decapitalize(stripped);
             propNames.put(methodName, propName);
             return propName;
         }
